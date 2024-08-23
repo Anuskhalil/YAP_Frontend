@@ -1,0 +1,16 @@
+/* src/components/TeamSlider.css */
+.team-member {
+  text-align: center;
+}
+
+.team-member img {
+  width: 100%;
+  max-width: 150px;
+  margin: 0 auto;
+  border-radius: 50%;
+}
+
+.member-name {
+  margin-top: 10px;
+  font-weight: bold;
+}
