@@ -13,7 +13,7 @@ const OurTeam = () => {
       <Row className="celebrities-row">
         <Col xs={12} md={6} lg={3}>
           <div className="image-container mt-5">
-            <img src="./src/images/celebrity1.jpeg" alt="Celebrity 1" className="img-fluid" />
+            <img src="./src/images/Celebrities/celebrity1.jpeg" alt="Celebrity 1" className="img-fluid" />
             <div className="overlay">
               <div className="text">Sahir Ali Baggha</div>
             </div>
@@ -21,7 +21,7 @@ const OurTeam = () => {
         </Col>
         <Col xs={12} md={6} lg={3}>
           <div className="image-container mt-5">
-            <img src="./src/images/celebrity2.jpeg" alt="Celebrity 2" className="img-fluid" />
+            <img src="./src/images/Celebrities/celebrity2.jpeg" alt="Celebrity 2" className="img-fluid" />
             <div className="overlay">
               <div className="text">Mahira Khan</div>
             </div>
@@ -29,7 +29,7 @@ const OurTeam = () => {
         </Col>
         <Col xs={12} md={6} lg={3}>
           <div className="image-container mt-5">
-            <img src="./src/images/celebrity3.jpeg" alt="Celebrity 3" className="img-fluid" />
+            <img src="./src/images/Celebrities/celebrity3.jpeg" alt="Celebrity 3" className="img-fluid" />
             <div className="overlay">
               <div className="text">Anwar Masood</div>
             </div>
@@ -37,7 +37,7 @@ const OurTeam = () => {
         </Col>
         <Col xs={12} md={6} lg={3}>
           <div className="image-container mt-5">
-            <img src="./src/images/celebrity4.jpeg" alt="Celebrity 4" className="img-fluid" />
+            <img src="./src/images/Celebrities/celebrity4.jpeg" alt="Celebrity 4" className="img-fluid" />
             <div className="overlay">
               <div className="text">Fahad Mustafa</div>
             </div>
@@ -45,7 +45,7 @@ const OurTeam = () => {
         </Col>
         <Col xs={12} md={6} lg={3}>
           <div className="image-container mt-5">
-            <img src="./src/images/celebrity5.jpeg" alt="Celebrity 4" className="img-fluid" />
+            <img src="./src/images/Celebrities/celebrity5.jpeg" alt="Celebrity 4" className="img-fluid" />
             <div className="overlay">
               <div className="text">Asim Azhar</div>
             </div>
@@ -53,7 +53,7 @@ const OurTeam = () => {
         </Col>
         <Col xs={12} md={6} lg={3}>
           <div className="image-container mt-5">
-            <img src="./src/images/celebrity6.jpeg" alt="Celebrity 4" className="img-fluid" />
+            <img src="./src/images/Celebrities/celebrity6.jpeg" alt="Celebrity 4" className="img-fluid" />
             <div className="overlay">
               <div className="text">Umer Alam</div>
             </div>
@@ -61,7 +61,7 @@ const OurTeam = () => {
         </Col>
         <Col xs={12} md={6} lg={3}>
           <div className="image-container mt-5">
-            <img src="./src/images/celebrity7.jpeg" alt="Celebrity 4" className="img-fluid" />
+            <img src="./src/images/Celebrities/celebrity7.jpeg" alt="Celebrity 4" className="img-fluid" />
             <div className="overlay">
               <div className="text">Hiba Bukhari</div>
             </div>

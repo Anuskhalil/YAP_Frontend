@@ -4,8 +4,8 @@ import './UniversitySlider.css'; // Add custom styles here
 
 const UniversitySlider = () => {
   const universities = [
-    { name: 'Karachi University', logo: './src/images/ku logo.png' },
-    { name: 'DOW University', logo: './src/images/dow logo.jpg' },
+    { name: 'Karachi University', logo: './src/images/MoU Universities/ku logo.png' },
+    { name: 'DOW University', logo: './src/images/MoU Universities/dow logo.jpg' },
     // Add more universities
   ];
 
