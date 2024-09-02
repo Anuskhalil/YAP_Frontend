@@ -2,6 +2,8 @@ import React from 'react';
 import { Container, Row, Col } from 'react-bootstrap';
 import './OurTeam.css';
 import TeamSlider from './TeamSlider'; // Assume you have a slider component
+import TeamGrid from "./TeamGrid";
+
 
 const OurTeam = () => {
   return (
@@ -21,7 +23,7 @@ const OurTeam = () => {
         </Col>
         <Col xs={12} md={6} lg={3}>
           <div className="image-container mt-5">
-            <img src="./src/images/Celebrities/celebrity2.jpeg" alt="Celebrity 2" className="img-fluid" />
+            <img src="./src/images/Celebrities/celebrity2.jpg" alt="Celebrity 2" className="img-fluid" />
             <div className="overlay">
               <div className="text">Mahira Khan</div>
             </div>
@@ -29,15 +31,15 @@ const OurTeam = () => {
         </Col>
         <Col xs={12} md={6} lg={3}>
           <div className="image-container mt-5">
-            <img src="./src/images/Celebrities/celebrity3.jpeg" alt="Celebrity 3" className="img-fluid" />
+            <img src="./src/images/Celebrities/celebrity3.jpg" alt="Celebrity 3" className="img-fluid" />
             <div className="overlay">
-              <div className="text">Anwar Masood</div>
+              <div className="text">Anwar Maqsood</div>
             </div>
           </div>
         </Col>
         <Col xs={12} md={6} lg={3}>
           <div className="image-container mt-5">
-            <img src="./src/images/Celebrities/celebrity4.jpeg" alt="Celebrity 4" className="img-fluid" />
+            <img src="./src/images/Celebrities/celebrity4.jpg" alt="Celebrity 4" className="img-fluid" />
             <div className="overlay">
               <div className="text">Fahad Mustafa</div>
             </div>
@@ -61,7 +63,7 @@ const OurTeam = () => {
         </Col>
         <Col xs={12} md={6} lg={3}>
           <div className="image-container mt-5">
-            <img src="./src/images/Celebrities/celebrity7.jpeg" alt="Celebrity 4" className="img-fluid" />
+            <img src="./src/images/Celebrities/celebrity7.jpg" alt="Celebrity 4" className="img-fluid" />
             <div className="overlay">
               <div className="text">Hiba Bukhari</div>
             </div>
@@ -70,6 +72,7 @@ const OurTeam = () => {
       </Row>
       <h3 className="teamMembers mt-5">YAP Team Members</h3>
       <TeamSlider />
+      <TeamGrid />
     </Container>
   );
 };

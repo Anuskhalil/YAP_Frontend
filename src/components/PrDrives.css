@@ -1,38 +1,38 @@
 /* prDrives.css */
-.prdrives-container {
+.pr-drives-container {
   padding: 20px 0;
   text-align: center;
 }
 
-.prdrives-title {
+.pr-drives-title {
   margin-bottom: 30px;
   font-size: 2rem;
   font-weight: bold;
   text-shadow: 1px 1px 3px #000;
 }
 
-.prdrives-photo-col {
+.pr-drives-photo-col {
   margin-bottom: 15px;
 }
 
-.prdrives-photo-wrapper {
+.pr-drives-photo-wrapper {
   position: relative;
   overflow: hidden;
   border-radius: 10px;
   transition: transform 0.3s ease-in-out;
 }
 
-.prdrives-photo-wrapper:hover {
+.pr-drives-photo-wrapper:hover {
   transform: scale(1.05);
 }
 
-.prdrives-photo {
+.pr-drives-photo {
   width: 100%;
   height: auto;
   border-radius: 10px;
 }
 
-.prdrives-photo-caption {
+.pr-drives-photo-caption {
   position: absolute;
   bottom: 0;
   width: 100%;

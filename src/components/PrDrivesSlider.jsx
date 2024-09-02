@@ -4,8 +4,9 @@ import './PrDrives.css';
 
 const PrDrives = () => {
   const prDrivesPhotos = [
-    { title: 'PR Drive 1', image: './src/images/Pr Drives/pr.jpeg' },
-    { title: 'PR Drive 2', image: './src/images/Pr Drives/pr2.jpeg' },
+    { title: 'PR Drive 1', image: './src/images/Pr Drives/pr Drives 1.jpg' },
+    { title: 'PR Drive 2', image: './src/images/Pr Drives/pr Drives 2.jpg' },
+    { title: 'PR Drive 3', image: './src/images/Pr Drives/pr Drives 3.jpg' },
   ];
 
   return (

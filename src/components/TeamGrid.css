@@ -1,0 +1,88 @@
+/* TeamGrid.css */
+.team-grid {
+  text-align: center;
+  padding: 20px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.team-header {
+  margin-bottom: 40px;
+}
+
+.team-header h1 {
+  font-size: 2rem;
+  font-weight: bold;
+  color: #333;
+}
+
+/* Leader Section */
+.leader {
+  margin-bottom: 50px;
+}
+
+.leader-image {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  border: 5px solid #ff6600;
+  /* Orange border */
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+  transition: transform 0.3s ease-in-out;
+}
+
+.leader-title {
+  margin-top: 15px;
+  font-size: 1.2rem;
+  font-weight: bold;
+  color: #333;
+}
+
+.leader-role {
+  font-size: 1rem;
+  color: #777;
+  margin-top: 5px;
+}
+
+.team-members {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.team-row {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+.team-member {
+  text-align: center;
+}
+
+.team-member-image {
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  border: 5px solid #fff;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease-in-out;
+}
+
+.team-member:hover .team-member-image {
+  transform: scale(1.1);
+}
+
+.team-member-title {
+  margin-top: 10px;
+  font-size: 1rem;
+  font-weight: 600;
+  color: #333;
+}
+
+.team-member-role {
+  font-size: 0.85rem;
+  color: #777;
+  margin-top: 5px;
+}
