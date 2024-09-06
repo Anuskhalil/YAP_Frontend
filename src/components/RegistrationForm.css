@@ -1,29 +1,41 @@
-/* src/components/RegistrationForm.css */
-.registration-form {
-  margin-top: 50px;
-  max-width: 600px;
-  margin-left: auto;
-  margin-right: auto;
-  background-color: #f7f7f7;
+.form-container {
   padding: 20px;
+  border: 1px solid #ccc;
   border-radius: 10px;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  background-color: #f9f9f9;
+  margin: 30px;
+  margin-top: 100px;
 }
 
-.registration-form h2 {
+.form-title {
   text-align: center;
+  font-weight: bold;
+  font-size: 24px;
+}
+
+.form-subtitle {
+  text-align: center;
+  font-size: 14px;
+  color: #777;
   margin-bottom: 20px;
 }
 
-.registration-form .form-group {
+label {
+  font-weight: bold;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="file"] {
   margin-bottom: 15px;
 }
 
-.registration-form .form-control {
-  border-radius: 5px;
+.interest-checkboxes {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 15px;
 }
 
-.registration-form .btn {
-  width: 100%;
-  border-radius: 5px;
+.interest-checkboxes label {
+  flex-basis: 30%;
 }
