@@ -2,8 +2,8 @@ import React from "react";
 import "./TeamGrid.css";
 
 // Import the images
-import azaibImage from "../images/Team Member/Azaib.png";
-import mazharImage from "../images/Team Member/Mazhar.png";
+import azaibImage from "../images/Team Member/azaib.png";
+import mazharImage from "../images/Team Member/mazhar.png";
 import anusImage from "../images/Team Member/anus.png";
 import ghulamImage from "../images/Team Member/ghulam.jpeg";
 import rawaidImage from "../images/Team Member/rawaid.jpeg";
