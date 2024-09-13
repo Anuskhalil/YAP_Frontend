@@ -3,6 +3,9 @@ import { Container, Button } from 'react-bootstrap';
 import { useNavigate } from 'react-router-dom';
 import './Hero.css';
 
+// Import the video from the src folder
+import heroVideo from '../videos/Hero vid.mp4';
+
 const Hero = () => {
   const navigate = useNavigate();
 
@@ -16,8 +19,9 @@ const Hero = () => {
 
   return (
     <div className="hero-section">
+      {/* Use the imported video */}
       <video className="hero-video" autoPlay loop muted>
-        <source src="./src/videos/Hero vid.mp4" type="video/mp4" />
+        <source src={heroVideo} type="video/mp4" />
         Your browser does not support the video tag.
       </video>
       <Container className="hero-content">

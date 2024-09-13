@@ -57,24 +57,45 @@ import Slider from 'react-slick';
 import 'slick-carousel/slick/slick.css';
 import 'slick-carousel/slick/slick-theme.css';
 import './SocietyDetail.css';
+import { Container, Button } from 'react-bootstrap';
+import { useNavigate } from 'react-router-dom';
+
+import society1 from '../images/Societies/Society1.png';
+import society2 from '../images/Societies/Society2.png';
+import society3 from '../images/Societies/Society3.png';
+import society4 from '../images/Societies/Society4.png';
+import society5 from '../images/Societies/Society5.png';
+import society6 from '../images/Societies/Society6.png';
+import society7 from '../images/Societies/Society7.png';
+import society8 from '../images/Societies/Society8.png';
+import society9 from '../images/Societies/Society9.png';
+import society10 from '../images/Societies/Society10.png';
+import society11 from '../images/Societies/Society11.png';
+import society12 from '../images/Societies/Society12.png';
+import society13 from '../images/Societies/Society13.png';
+import society14 from '../images/Societies/Society14.png';
+import society15 from '../images/Societies/Society15.png';
+import society16 from '../images/Societies/Society16.png';
+
+
 
 const societies = [
-  { id: 1, name: 'Readers & Writers', image: '../src/images/Societies/Society1.png', para: 'The Readers and Writers Society, Part of the ACP Youth Ambassador programme at the Arts Council of Pakistan, Karachi. It is designed for anyone who loves reading and writing.' },
-  { id: 2, name: 'Dramatic & Alliance', image: '../src/images/Societies/Society2.png', para: 'Part of the ACP Youth Ambassador programme at the Arts Council of Pakistan, Karachi, this society is perfect for those who are passionate about the arts. Whether you love the thrill of drama, the creativity of alliances, or the power of words, our society offers a platform for everyone who enjoys reading, writing, and artistic collaboration.' },
-  { id: 3, name: 'Beats & Buzz', image: '../src/images/Societies/Society3.png', para: 'The Beats and Buzz Society, part of the ACP Youth Ambassador programme at the Arts Council of Pakistan, Karachi, is designed for anyone who is passionate about music and entertainment.' },
-  { id: 4, name: 'Sports Society', image: '../src/images/Societies/Society4.png', para: 'The Sports Society, part of the ACP Youth Ambassador programme at the Arts Council of Pakistan, Karachi. This society is perfect for those who have a passion for sports and physical activities.' },
-  { id: 5, name: 'Beats Breaker', image: '../src/images/Societies/Society5.png', para: 'The Beats Breaker Society, part of the ACP Youth Ambassador programme at the Arts Council of Pakistan, Karachi. This society is designed for individuals who are passionate about dance, music, and the art of movement.' },
-  { id: 6, name: 'Quills and Scroll', image: '../src/images/Societies/Society6.png', para: 'The Quills and Scroll Society, part of the ACP Youth Ambassador programme at the Arts Council of Pakistan, Karachi. This society is perfect for anyone who enjoys the art of writing, calligraphy, and preserving history through words.' },
-  { id: 7, name: 'Culinary Cooks', image: '../src/images/Societies/Society7.png', para: 'The Culinary Cooks Society, part of the ACP Youth Ambassador programme at the Arts Council of Pakistan, Karachi. This society is designed for those who have a love for cooking, baking, and the culinary arts.' },
-  { id: 8, name: 'Tech Titans', image: '../src/images/Societies/Society8.png', para: 'The Tech Titans Society, part of the ACP Youth Ambassador programme at the Arts Council of Pakistan, Karachi. This society is ideal for individuals who are enthusiastic about technology, coding, and innovation.' },
-  { id: 9, name: 'Rhetoric Realm', image: '../src/images/Societies/society9.png', para: 'The Rhetoric Realm Society, part of the ACP Youth Ambassador programme at the Arts Council of Pakistan, Karachi. This society is for those who are passionate about public speaking, debate, and the power of persuasion.' },
-  { id: 10, name: 'Logistics Edge', image: '../src/images/Societies/Society10.png', para: 'The Logistics Edge Society, part of the ACP Youth Ambassador programme at the Arts Council of Pakistan, Karachi. This society is for individuals interested in logistics, management, and the efficient flow of resources.' },
-  { id: 11, name: 'Cinemagic', image: '../src/images/Societies/Society11.png', para: 'The Cinemagic Society, part of the ACP Youth Ambassador programme at the Arts Council of Pakistan, Karachi. This society is designed for those who are passionate about filmmaking, acting, and the magic of cinema.' },
-  { id: 12, name: 'Community Cares', image: '../src/images/Societies/Society12.png', para: 'The Community Cares Society, part of the ACP Youth Ambassador programme at the Arts Council of Pakistan, Karachi. This society is for individuals who are committed to community service, social welfare, and making a positive impact.' },
-  { id: 13, name: 'Traditions & Transitions', image: '../src/images/Societies/Society13.png', para: 'The Traditions & Transitions Society, part of the ACP Youth Ambassador programme at the Arts Council of Pakistan, Karachi. This society focuses on preserving cultural heritage while embracing modern transitions and changes.' },
-  { id: 14, name: 'Stitch & Stroke Club', image: '../src/images/Societies/Society14.png', para: 'The Stitch & Stroke Club, part of the ACP Youth Ambassador programme at the Arts Council of Pakistan, Karachi. This society is designed for those who are passionate about textile arts, embroidery, painting, and creative craftsmanship.' },
-  { id: 15, name: 'Entrepreneurship Club', image: '../src/images/Societies/Society15.png', para: 'The Entrepreneurship Club, part of the ACP Youth Ambassador programme at the Arts Council of Pakistan, Karachi. This society is ideal for individuals who are interested in business, startups, and innovative ventures.' },
-  { id: 16, name: 'Psych Squad', image: '../src/images/Societies/Society16.png', para: 'The Psych Squad, part of the ACP Youth Ambassador programme at the Arts Council of Pakistan, Karachi. This society is focused on psychology, mental health, and understanding human behavior.' },
+  { id: 1, name: 'Readers & Writers', image: society1, para: 'The Readers and Writers Society, Part of the ACP Youth Ambassador programme at the Arts Council of Pakistan, Karachi. It is designed for anyone who loves reading and writing.' },
+  { id: 2, name: 'Dramatic & Alliance', image: society2, para: 'Part of the ACP Youth Ambassador programme at the Arts Council of Pakistan, Karachi, this society is perfect for those who are passionate about the arts. Whether you love the thrill of drama, the creativity of alliances, or the power of words, our society offers a platform for everyone who enjoys reading, writing, and artistic collaboration.' },
+  { id: 3, name: 'Beats & Buzz', image: society3, para: 'The Beats and Buzz Society, part of the ACP Youth Ambassador programme at the Arts Council of Pakistan, Karachi, is designed for anyone who is passionate about music and entertainment.' },
+  { id: 4, name: 'Sports Society', image: society4, para: 'The Sports Society, part of the ACP Youth Ambassador programme at the Arts Council of Pakistan, Karachi. This society is perfect for those who have a passion for sports and physical activities.' },
+  { id: 5, name: 'Beats Breaker', image: society5, para: 'The Beats Breaker Society, part of the ACP Youth Ambassador programme at the Arts Council of Pakistan, Karachi. This society is designed for individuals who are passionate about dance, music, and the art of movement.' },
+  { id: 6, name: 'Quills and Scroll', image: society6, para: 'The Quills and Scroll Society, part of the ACP Youth Ambassador programme at the Arts Council of Pakistan, Karachi. This society is perfect for anyone who enjoys the art of writing, calligraphy, and preserving history through words.' },
+  { id: 7, name: 'Culinary Cooks', image: society7, para: 'The Culinary Cooks Society, part of the ACP Youth Ambassador programme at the Arts Council of Pakistan, Karachi. This society is designed for those who have a love for cooking, baking, and the culinary arts.' },
+  { id: 8, name: 'Tech Titans', image: society8, para: 'The Tech Titans Society, part of the ACP Youth Ambassador programme at the Arts Council of Pakistan, Karachi. This society is ideal for individuals who are enthusiastic about technology, coding, and innovation.' },
+  { id: 9, name: 'Rhetoric Realm', image: society9, para: 'The Rhetoric Realm Society, part of the ACP Youth Ambassador programme at the Arts Council of Pakistan, Karachi. This society is for those who are passionate about public speaking, debate, and the power of persuasion.' },
+  { id: 10, name: 'Logistics Edge', image: society10, para: 'The Logistics Edge Society, part of the ACP Youth Ambassador programme at the Arts Council of Pakistan, Karachi. This society is for individuals interested in logistics, management, and the efficient flow of resources.' },
+  { id: 11, name: 'Cinemagic', image: society11, para: 'The Cinemagic Society, part of the ACP Youth Ambassador programme at the Arts Council of Pakistan, Karachi. This society is designed for those who are passionate about filmmaking, acting, and the magic of cinema.' },
+  { id: 12, name: 'Community Cares', image: society12, para: 'The Community Cares Society, part of the ACP Youth Ambassador programme at the Arts Council of Pakistan, Karachi. This society is for individuals who are committed to community service, social welfare, and making a positive impact.' },
+  { id: 13, name: 'Traditions & Transitions', image: society13, para: 'The Traditions & Transitions Society, part of the ACP Youth Ambassador programme at the Arts Council of Pakistan, Karachi. This society focuses on preserving cultural heritage while embracing modern transitions and changes.' },
+  { id: 14, name: 'Stitch & Stroke Club', image: society14, para: 'The Stitch & Stroke Club, part of the ACP Youth Ambassador programme at the Arts Council of Pakistan, Karachi. This society is designed for those who are passionate about textile arts, embroidery, painting, and creative craftsmanship.' },
+  { id: 15, name: 'Entrepreneurship Club', image: society15, para: 'The Entrepreneurship Club, part of the ACP Youth Ambassador programme at the Arts Council of Pakistan, Karachi. This society is ideal for individuals who are interested in business, startups, and innovative ventures.' },
+  { id: 16, name: 'Psych Squad', image: society16, para: 'The Psych Squad, part of the ACP Youth Ambassador programme at the Arts Council of Pakistan, Karachi. This society is focused on psychology, mental health, and understanding human behavior.' },
 ];
 
 // Function to get slider content based on society ID
@@ -201,6 +222,12 @@ const getSliderContent = (societyId) => {
 
 
 const SocietyDetail = () => {
+  const navigate = useNavigate();
+
+  const handleSocietyFormClick = () => {
+    navigate('/SocietyForm');
+  };
+
   const { id } = useParams();
   const society = societies.find((s) => s.id === parseInt(id));
 
@@ -234,6 +261,11 @@ const SocietyDetail = () => {
           </div>
         ))}
       </Slider>
+      <div className="text-center mt-4">
+        <Button variant="dark" className="register-btn px-4 fw-bold" onClick={handleSocietyFormClick}>
+          Join Now
+        </Button>
+      </div>
     </div>
   );
 

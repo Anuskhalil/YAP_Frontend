@@ -22,7 +22,7 @@ const Contact = () => {
           <Form.Control as="textarea" rows={3} />
         </Form.Group>
 
-        <Button variant="primary" type="submit">
+        <Button className='mt-3' variant="primary" type="submit">
           Submit
         </Button>
       </Form>

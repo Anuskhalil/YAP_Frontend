@@ -2,11 +2,16 @@ import React from 'react';
 import { Container, Row, Col } from 'react-bootstrap';
 import './PrDrives.css';
 
+// Import images for PR Drives
+import prDrive1 from '../images/PrDrives/prDrives1.jpg';
+import prDrive2 from '../images/PrDrives/prDrives2.jpg';
+import prDrive3 from '../images/PrDrives/prDrives3.jpg';
+
 const PrDrives = () => {
   const prDrivesPhotos = [
-    { title: 'PR Drive 1', image: './src/images/Pr Drives/pr Drives 1.jpg' },
-    { title: 'PR Drive 2', image: './src/images/Pr Drives/pr Drives 2.jpg' },
-    { title: 'PR Drive 3', image: './src/images/Pr Drives/pr Drives 3.jpg' },
+    { title: 'PR Drive 1', image: prDrive1 },
+    { title: 'PR Drive 2', image: prDrive2 },
+    { title: 'PR Drive 3', image: prDrive3 },
   ];
 
   return (

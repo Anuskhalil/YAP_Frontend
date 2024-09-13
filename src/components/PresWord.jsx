@@ -2,6 +2,7 @@
 
 import React from 'react';
 import './PresWords.css';
+import presWord from '../images/President Arts Council.jpg'
 
 const PresWord = () => {
   return (
@@ -9,7 +10,7 @@ const PresWord = () => {
       <div className="row align-items-center">
         <div className="col-lg-6 mb-4 mb-lg-0 text-center">
           <img
-            src="./src/images/President Arts Council.jpg"
+            src={presWord}
             alt="President"
             className="img-fluid shadow-sm"
           />

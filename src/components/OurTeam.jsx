@@ -4,6 +4,14 @@ import './OurTeam.css';
 import TeamSlider from './TeamSlider'; // Assume you have a slider component
 import TeamGrid from "./TeamGrid";
 
+import sahirAliBagga from '../images/Celebrities/celebrity1.jpeg';
+import mahiraKhan from '../images/Celebrities/celebrity2.jpg';
+import anwarmaqsood from '../images/Celebrities/celebrity3.jpg';
+import fahadMustafa from '../images/Celebrities/celebrity4.jpg';
+import asimAzhar from '../images/Celebrities/celebrity5.jpeg';
+import umerAlam from '../images/Celebrities/celebrity6.jpeg';
+import hibaBukhari from '../images/Celebrities/celebrity7.jpg';
+
 
 const OurTeam = () => {
   return (
@@ -15,7 +23,7 @@ const OurTeam = () => {
       <Row className="celebrities-row">
         <Col xs={12} md={6} lg={3}>
           <div className="image-container mt-5">
-            <img src="./src/images/Celebrities/celebrity1.jpeg" alt="Celebrity 1" className="img-fluid" />
+            <img src={sahirAliBagga} alt="sahirAliBagga" className="img-fluid" />
             <div className="overlay">
               <div className="text">Sahir Ali Baggha</div>
             </div>
@@ -23,7 +31,7 @@ const OurTeam = () => {
         </Col>
         <Col xs={12} md={6} lg={3}>
           <div className="image-container mt-5">
-            <img src="./src/images/Celebrities/celebrity2.jpg" alt="Celebrity 2" className="img-fluid" />
+            <img src={mahiraKhan} alt="mahiraKhan" className="img-fluid" />
             <div className="overlay">
               <div className="text">Mahira Khan</div>
             </div>
@@ -31,7 +39,7 @@ const OurTeam = () => {
         </Col>
         <Col xs={12} md={6} lg={3}>
           <div className="image-container mt-5">
-            <img src="./src/images/Celebrities/celebrity3.jpg" alt="Celebrity 3" className="img-fluid" />
+            <img src={anwarmaqsood} alt="anwarMaqsood" className="img-fluid" />
             <div className="overlay">
               <div className="text">Anwar Maqsood</div>
             </div>
@@ -39,7 +47,7 @@ const OurTeam = () => {
         </Col>
         <Col xs={12} md={6} lg={3}>
           <div className="image-container mt-5">
-            <img src="./src/images/Celebrities/celebrity4.jpg" alt="Celebrity 4" className="img-fluid" />
+            <img src={fahadMustafa} alt="fahadMustafa" className="img-fluid" />
             <div className="overlay">
               <div className="text">Fahad Mustafa</div>
             </div>
@@ -47,7 +55,7 @@ const OurTeam = () => {
         </Col>
         <Col xs={12} md={6} lg={3}>
           <div className="image-container mt-5">
-            <img src="./src/images/Celebrities/celebrity5.jpeg" alt="Celebrity 4" className="img-fluid" />
+            <img src={asimAzhar} alt="asimAzhar" className="img-fluid" />
             <div className="overlay">
               <div className="text">Asim Azhar</div>
             </div>
@@ -55,7 +63,7 @@ const OurTeam = () => {
         </Col>
         <Col xs={12} md={6} lg={3}>
           <div className="image-container mt-5">
-            <img src="./src/images/Celebrities/celebrity6.jpeg" alt="Celebrity 4" className="img-fluid" />
+            <img src={umerAlam} alt="umerAlam" className="img-fluid" />
             <div className="overlay">
               <div className="text">Umer Alam</div>
             </div>
@@ -63,7 +71,7 @@ const OurTeam = () => {
         </Col>
         <Col xs={12} md={6} lg={3}>
           <div className="image-container mt-5">
-            <img src="./src/images/Celebrities/celebrity7.jpg" alt="Celebrity 4" className="img-fluid" />
+            <img src={hibaBukhari} alt="hibaBukhari" className="img-fluid" />
             <div className="overlay">
               <div className="text">Hiba Bukhari</div>
             </div>

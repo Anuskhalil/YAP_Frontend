@@ -11,6 +11,7 @@ import Footer from './components/Footer';
 import Loader from './components/Loader';
 import RegistrationForm from './components/RegistrationForm';
 import SocietyDetail from './components/SocietyDetail';
+import SocietyForm from './components/SocietyForm';
 
 const App = () => {
   const [loading, setLoading] = useState(true);
@@ -42,6 +43,7 @@ const App = () => {
           </>} />
           <Route path="/our-team" element={<OurTeam />} />
           <Route path="/register" element={<RegistrationForm />} />
+          <Route path="/SocietyForm" element={<SocietyForm />} />
           <Route path="/society/:id" element={<SocietyDetail />} />
         </Routes>
         <Footer />

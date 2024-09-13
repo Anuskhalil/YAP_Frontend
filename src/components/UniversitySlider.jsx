@@ -2,10 +2,13 @@ import React from 'react';
 import { Carousel } from 'react-bootstrap';
 import './UniversitySlider.css'; // Add custom styles here
 
+import ku from '../images/MoU Universities/ku.png';
+import dow from '../images/MoU Universities/dow logo.jpg';
+
 const UniversitySlider = () => {
   const universities = [
-    { name: 'Karachi University', logo: './src/images/MoU Universities/ku logo.png' },
-    { name: 'DOW University', logo: './src/images/MoU Universities/dow logo.jpg' },
+    { name: 'Karachi University', logo: ku },
+    { name: 'DOW University', logo: dow },
     // Add more universities
   ];
 
