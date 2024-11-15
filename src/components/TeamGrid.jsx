@@ -1,22 +1,24 @@
 import React from "react";
 import "./TeamGrid.css";
 // Team 01
-import azaib from '../images/Team Member/azaib.png';
-import mazhar from '../images/Team Member/mazhar.png';
+import azaib from '../images/TeamMember/azaib.png';
+import mazhar from '../images/TeamMember/mazhar.png';
+// import ilsa from '../images/TeamMember/ilsa.png';
+// import shehriyar from '.."/images/TeamMember/shehriyar.png"';
 // Team 02
-import anus from '../images/Team Member/anus.png';
-import ghulam from '../images/Team Member/ghulam.jpeg';
-import rawaid from '../images/Team Member/rawaid.jpeg';
+import anus from '../images/TeamMember/anus.png';
+import ghulam from '../images/TeamMember/ghulam.jpeg';
+import rawaid from '../images/TeamMember/rawaid.jpeg';
 // Team 03
-import noman from '../images/Team Member/noman.jpg';
-import mariyam from '../images/Team Member/mariyam.jpg';
-import eeman from '../images/Team Member/eeman2.jpg';
-import aqsa from '../images/Team Member/aqsa.jpg';
+import noman from '../images/TeamMember/noman.jpg';
+import mariyam from '../images/TeamMember/mariyam.jpg';
+import eeman from '../images/TeamMember/eeman2.jpg';
+import aqsa from '../images/TeamMember/aqsa.jpg';
 // Team 04
-import ali from '../images/Team Member/ali.jpeg';
-import alim from '../images/Team Member/alim.jpg';
-import arisha from '../images/Team Member/arisha.jpg';
-import mahnoor from '../images/Team Member/mahnoor.jpg';
+import ali from '../images/TeamMember/ali.jpeg';
+import alim from '../images/TeamMember/alim.jpg';
+import arisha from '../images/TeamMember/arisha.jpg';
+import mahnoor from '../images/TeamMember/mahnoor.jpg';
 
 
 
@@ -36,16 +38,16 @@ const TeamGrid = () => {
             <h3 className="team-member-title">Mazhar Suleman Noorani</h3>
             <p className="team-member-role">Role</p>
           </div>
-          <div className="team-member">
-            <img src="/images/Team Member/ilsa.png" alt="Ilsa" className="team-member-image" />
+          {/* <div className="team-member">
+            <img src={ilsa} alt="Ilsa" className="team-member-image" />
             <h3 className="team-member-title">Ilsa</h3>
             <p className="team-member-role">Role</p>
           </div>
           <div className="team-member">
-            <img src="/images/Team Member/shehriyar.png" alt="Syed Shehriyar" className="team-member-image" />
+            <img src={shehriyar} alt="Syed Shehriyar" className="team-member-image" />
             <h3 className="team-member-title">Syed Shehriyar</h3>
             <p className="team-member-role">Role</p>
-          </div>
+          </div> */}
         </div>
       </div>
 

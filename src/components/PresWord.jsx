@@ -2,7 +2,7 @@
 
 import React from 'react';
 import './PresWords.css';
-import presWord from '../images/President Arts Council.jpg'
+import presWord from '../images/PresidentArtsCouncil.jpg'
 
 const PresWord = () => {
   return (
