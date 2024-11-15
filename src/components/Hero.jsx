@@ -30,7 +30,7 @@ const Hero = () => {
         <p className="yap-para">
           Join the ACP Ambassador Programme at the Arts Council of Pakistan, Karachi! Enjoy exclusive event access, library privileges, skill-building, networking, and cafe discounts. Don't miss this chance to grow and make a difference in the arts!
         </p>
-        <Button variant="dark" className="register-btn px-4 fw-bold" onClick={handleRegisterClick}>
+        <Button variant="dark" className="fw-bold" onClick={handleRegisterClick}>
           Register Now
         </Button>
         <Button variant="dark" className="fixed-button fw-bold" onClick={handleTeamClick}>
