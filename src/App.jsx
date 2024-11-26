@@ -12,6 +12,7 @@ import Loader from './components/Loader';
 import RegistrationForm from './components/RegistrationForm';
 import SocietyDetail from './components/SocietyDetail';
 import SocietyForm from './components/SocietyForm';
+import AboutYap from './components/AboutYap';
 
 const App = () => {
   const [loading, setLoading] = useState(true);
@@ -45,6 +46,7 @@ const App = () => {
           <Route path="/register" element={<RegistrationForm />} />
           <Route path="/SocietyForm" element={<SocietyForm />} />
           <Route path="/society/:id" element={<SocietyDetail />} />
+          <Route path="/AboutYap" element={<AboutYap />} />
         </Routes>
         <Footer />
       </div>

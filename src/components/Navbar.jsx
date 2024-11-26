@@ -6,8 +6,10 @@ import logo from '../images/yap_hero_img.png'; // Adjust path based on your dire
 import './Navbar.css';
 import LoginModal from './LoginModal';
 import SignUpModal from './SignUpModal';
+import { useNavigate } from 'react-router-dom';
 
 const NavigationBar = () => {
+  const navigate = useNavigate()
   const [showLogin, setShowLogin] = useState(false);
   const [showSignUp, setShowSignUp] = useState(false);
 
@@ -16,6 +18,10 @@ const NavigationBar = () => {
 
   const handleSignUpClose = () => setShowSignUp(false);
   const handleSignUpShow = () => setShowSignUp(true);
+
+  const aboutYAP = () => {
+      navigate('/AboutYap')
+  }
 
   return (
     <>
@@ -33,8 +39,8 @@ const NavigationBar = () => {
           <Navbar.Collapse id="basic-navbar-nav">
             <Nav className="ms-auto" id='navItems'>
               <Nav.Link href="#home">Home</Nav.Link>
-              <Nav.Link href="#about">About</Nav.Link>
-              <Nav.Link href="#service">Service</Nav.Link>
+              <Nav.Link href="" onClick={aboutYAP}>About Us</Nav.Link>
+              <Nav.Link href="#service">Events</Nav.Link>
               <Nav.Link href="#blog">Blog</Nav.Link>
               <Nav.Link href="#contact">Contact</Nav.Link>
               <Nav.Link href="#login">

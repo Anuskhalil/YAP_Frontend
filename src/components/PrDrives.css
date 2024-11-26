@@ -1,46 +1,122 @@
-/* prDrives.css */
+/* PR Drives Section */
+body,
+html {
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+}
+
+.modal-body {
+  background: transparent !important;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.modal-content {
+  background: transparent !important;
+  border: none !important;
+  box-shadow: none;
+}
+
+img.img-fluid {
+  background: transparent;
+}
+
 .pr-drives-container {
   padding: 20px 0;
   text-align: center;
+  background-color: #f9f9f9;
 }
 
 .pr-drives-title {
   margin-bottom: 30px;
   font-size: 2rem;
   font-weight: bold;
-  text-shadow: 1px 1px 3px #000;
+  color: #343a40;
+  text-transform: uppercase;
+  animation: fadeIn 1.2s ease-in-out;
 }
 
 .pr-drives-photo-col {
-  margin-bottom: 15px;
+  margin-bottom: 20px;
 }
 
+/* Image Wrapper with Hover Animation */
 .pr-drives-photo-wrapper {
   position: relative;
   overflow: hidden;
   border-radius: 10px;
-  transition: transform 0.3s ease-in-out;
+  transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+  cursor: pointer;
 }
 
 .pr-drives-photo-wrapper:hover {
   transform: scale(1.05);
+  box-shadow: 0px 8px 15px rgba(255, 255, 255, 0.2);
 }
 
+/* Image with Zoom Animation */
 .pr-drives-photo {
   width: 100%;
   height: auto;
   border-radius: 10px;
+  display: block;
+  transition: transform 0.5s ease-in-out;
 }
 
+.pr-drives-photo-wrapper:hover .pr-drives-photo {
+  transform: scale(1.1);
+}
+
+/* Caption with Fade-In Animation */
 .pr-drives-photo-caption {
   position: absolute;
   bottom: 0;
   width: 100%;
   padding: 10px;
-  background: rgba(0, 0, 0, 0.6);
+  background: rgba(0, 0, 0, 0.7);
   color: #fff;
   font-size: 1rem;
   text-align: center;
   border-bottom-left-radius: 10px;
   border-bottom-right-radius: 10px;
+  opacity: 0;
+  transition: opacity 0.3s ease-in-out, transform 0.3s ease-in-out;
+}
+
+.pr-drives-photo-wrapper:hover .pr-drives-photo-caption {
+  opacity: 1;
+  transform: translateY(-10px);
+}
+
+/* Keyframes for Fade-In Animation */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(-10px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Pagination Controls */
+.pagination-controls {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 20px;
+}
+
+.pagination-controls button {
+  margin: 0 5px;
+}
+
+.pagination-controls span {
+  font-size: 1rem;
+  font-weight: bold;
 }

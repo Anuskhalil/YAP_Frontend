@@ -1,25 +1,41 @@
-/* src/components/PresidentsWords.css */
-
-#preswords{
-margin-top: -90px;
-}
-
-img {
-  max-width: 100%;
-  height: auto;
-  /* border-radius: 50%; */
+/* Animation Enhancements */
+#preswords {
+  margin-top: -90px;
 }
 
 .presWord {
   font-size: 1.2rem;
 }
 
-/* @media (max-width: 767.98px) {
-  .container {
+/* Add AOS-based Animation Styles */
+[data-aos="fade-right"] {
+  opacity: 0;
+  transform: translateX(-50px);
+  transition: all 0.8s ease-in-out;
+}
+
+[data-aos="fade-left"] {
+  opacity: 0;
+  transform: translateX(50px);
+  transition: all 0.8s ease-in-out;
+}
+
+[data-aos].aos-animate {
+  opacity: 1;
+  transform: translateX(0);
+}
+
+/* Responsive Design for Smaller Screens */
+@media (max-width: 767.98px) {
+  #preswords {
     text-align: center;
   }
 
-  .col-md-8 {
-    margin-top: 1.5rem;
+  .presWord {
+    font-size: 1rem;
   }
-} */
+
+  img {
+    margin-bottom: 1rem;
+  }
+}

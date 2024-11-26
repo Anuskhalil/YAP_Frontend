@@ -4,8 +4,8 @@ import './MainPage.css';
 
 import UniversitySlider from './UniversitySlider';
 import PRDrivesSlider from './PrDrivesSlider';
-import MeetupSlider from './MeetupSlider';
-import Scholarships from './ScholarshipsAndInternships';
+// import MeetupSlider from './MeetupSlider';
+// import Scholarships from './ScholarshipsAndInternships';
 
 const UniversityPage = () => {
   return (
@@ -23,16 +23,16 @@ const UniversityPage = () => {
       </section>
 
       {/* Meetup Photos Slider */}
-      <section id="meetup-photos">
+      {/* <section id="meetup-photos">
         <h2 className="section-title fs-1 fw-bold">Meetup Gallery</h2>
         <MeetupSlider />
-      </section>
+      </section> */}
 
       {/* Scholarships and Internships Section */}
-      <section id="scholarships">
+      {/* <section id="scholarships">
         <h2 className="section-title fs-1 fw-bold">Scholarships and Internships</h2>
         <Scholarships />
-      </section>
+      </section> */}
     </div>
   );
 };
