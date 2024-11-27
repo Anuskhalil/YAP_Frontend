@@ -50,9 +50,9 @@ const PrDrives = () => {
 
   return (
     <Container className="pr-drives-container">
-      <h2 className="pr-drives-title" data-aos="fade-down">
+      {/* <h2 className="pr-drives-title" data-aos="fade-down">
         PR Drives
-      </h2>
+      </h2> */}
       <Row>
         {paginatedPhotos.map((photo, index) => (
           <Col

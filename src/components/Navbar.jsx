@@ -33,7 +33,7 @@ const NavigationBar = () => {
               alt="Youth Ambassador Programme Logo"
               className="navbar-logo"
             />
-            <span className="ms-2">ACPKHI-YAP</span>
+            {/* <span className="ms-2">ACPKHI-YAP</span> */}
           </Navbar.Brand>
           <Navbar.Toggle aria-controls="basic-navbar-nav" />
           <Navbar.Collapse id="basic-navbar-nav">
