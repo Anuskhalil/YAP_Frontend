@@ -1,4 +1,3 @@
-// src/components/Loader.jsx
 import React from 'react';
 import './Loader.css';
 
@@ -8,7 +7,7 @@ import LoaderVideo from '../videos/Loader video.mp4';
 const Loader = () => {
   return (
     <div className="loader">
-      <video autoPlay loop muted>
+      <video className="loader-video" autoPlay loop muted>
         <source src={LoaderVideo} type="video/mp4" />
         Your browser does not support the video tag.
       </video>

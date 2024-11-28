@@ -1,16 +1,22 @@
-/* src/components/Navbar.css */
+/* Navbar styles */
+#navbar {
+  background: linear-gradient(rgba(255, 255, 255, 0.8), rgba(253, 253, 253, 0.7));
+  height: 100px;
+  position: sticky;
+  /* Ensure navbar sticks to the top */
+  top: 0;
+  z-index: 1000;
+  /* Keep it above other elements */
+  transition: background 0.3s ease;
+  /* Smooth transition for toggling */
+}
+
 .navbar-logo {
   height: 90px;
   max-width: 100%;
 }
 
-#navbar {
-  background: linear-gradient(rgba(255, 255, 255, 0.8), rgba(253, 253, 253, 0.7));
-  height: 100px;
- /* margin-top: -40px; */
-}
-
-
+/* Navbar brand styling */
 #navbar .navbar-brand {
   display: flex;
   justify-content: center;
@@ -23,11 +29,38 @@
   font-weight: bold;
 }
 
+/* Nav link styling */
 #navbar .nav-link {
   font-size: 1rem;
   color: rgb(0, 0, 0);
   font-weight: bold;
 }
 
+/* Ensure navbar-collapse has a background when expanded */
+.navbar-collapse {
+  background: linear-gradient(rgba(255, 255, 255, 0.95), rgba(253, 253, 253, 0.9));
+}
 
+/* Navbar toggler button styles */
+.navbar-toggler {
+  border: none;
+}
 
+.navbar-toggler:focus {
+  outline: none;
+  box-shadow: none;
+  /* Remove the default focus outline */
+}
+
+/* Responsive behavior */
+@media (max-width: 768px) {
+  #navbar {
+    height: auto;
+    /* Allow height to adjust for small screens */
+  }
+
+  .navbar-collapse {
+    padding: 10px;
+    /* Add padding for a clean look */
+  }
+}
