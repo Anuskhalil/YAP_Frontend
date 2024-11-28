@@ -2,7 +2,7 @@ import React from 'react';
 import { Container } from 'react-bootstrap';
 import './MainPage.css';
 
-import UniversitySlider from './UniversitySlider';
+import UniversitySlider from './MoUSignedUni';
 import PRDrivesSlider from './PrDrivesSlider';
 // import MeetupSlider from './MeetupSlider';
 // import Scholarships from './ScholarshipsAndInternships';

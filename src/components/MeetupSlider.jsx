@@ -112,13 +112,22 @@ const MeetupSlider = () => {
       </div>
 
       {/* Modal for Lightbox */}
-      <Modal show={showModal} onHide={() => setShowModal(false)} centered>
-        <Modal.Body className="text-center">
+      <Modal
+        show={showModal}
+        onHide={() => setShowModal(false)}
+        centered
+        size="lg" // Ensures the modal is larger
+      >
+        <Modal.Body className="text-center modal-body">
           <img
             src={currentImage}
-            alt="Meetup"
-            className="img-fluid"
-            style={{ borderRadius: '10px' }}
+            alt="Meetup gallery"
+            className="img-fluid large-modal-image"
+            style={{
+              borderRadius: '10px',
+              maxHeight: '90vh',
+              objectFit: 'contain',
+            }}
           />
         </Modal.Body>
       </Modal>

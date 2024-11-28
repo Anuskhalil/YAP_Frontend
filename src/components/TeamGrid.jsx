@@ -12,6 +12,8 @@ import noman from "../images/TeamMember/noman.jpg";
 import eeman from "../images/TeamMember/eemanYAP.jpg";
 import aqsa from "../images/TeamMember/aqsa.jpg";
 import usman from "../images/TeamMember/usmanYAP.jpg";
+import hamza from "../images/TeamMember/hamzaYAP.jpg";
+import mifra from "../images/TeamMember/mifraYAP.jpg";
 
 const TeamGrid = () => {
   // Team member data
@@ -27,6 +29,8 @@ const TeamGrid = () => {
     { name: "Noman", role: "Team Member", image: noman },
     { name: "Eeman", role: "Team Member", image: eeman },
     { name: "Aqsa", role: "Team Member", image: aqsa },
+    { name: "Hamza Hussain Shah", role: "Team Member", image: hamza },
+    { name: "Syeda Mifrah Sajid", role: "Team Member", image: mifra },
   ];
 
   return (

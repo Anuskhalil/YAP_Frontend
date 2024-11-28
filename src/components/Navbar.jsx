@@ -4,20 +4,20 @@ import React, { useState } from 'react';
 import { Navbar, Nav, Container, Button } from 'react-bootstrap';
 import logo from '../images/yap_hero_img.png'; // Adjust path based on your directory structure
 import './Navbar.css';
-import LoginModal from './LoginModal';
-import SignUpModal from './SignUpModal';
+// import LoginModal from './LoginModal';
+// import SignUpModal from './SignUpModal';
 import { useNavigate } from 'react-router-dom';
 
 const NavigationBar = () => {
   const navigate = useNavigate()
-  const [showLogin, setShowLogin] = useState(false);
-  const [showSignUp, setShowSignUp] = useState(false);
+  // const [showLogin, setShowLogin] = useState(false);
+  // const [showSignUp, setShowSignUp] = useState(false);
 
-  const handleLoginClose = () => setShowLogin(false);
-  const handleLoginShow = () => setShowLogin(true);
+  // const handleLoginClose = () => setShowLogin(false);
+  // const handleLoginShow = () => setShowLogin(true);
 
-  const handleSignUpClose = () => setShowSignUp(false);
-  const handleSignUpShow = () => setShowSignUp(true);
+  // const handleSignUpClose = () => setShowSignUp(false);
+  // const handleSignUpShow = () => setShowSignUp(true);
 
   const aboutYAP = () => {
       navigate('/AboutYap')
@@ -43,19 +43,19 @@ const NavigationBar = () => {
               <Nav.Link href="#service">Events</Nav.Link>
               <Nav.Link href="#blog">Blog</Nav.Link>
               <Nav.Link href="#contact">Contact</Nav.Link>
-              <Nav.Link href="#login">
+              {/* <Nav.Link href="#login">
                 <Button variant="dark" className='fw-bold' onClick={handleLoginShow}>Log In</Button>
               </Nav.Link>
               <Nav.Link href="#signup">
                 <Button variant="dark" className='fw-bold' onClick={handleSignUpShow}>Sign Up</Button>
-              </Nav.Link>
+              </Nav.Link> */}
             </Nav>
           </Navbar.Collapse>
         </Container>
       </Navbar>
 
-      <LoginModal show={showLogin} handleClose={handleLoginClose} />
-      <SignUpModal show={showSignUp} handleClose={handleSignUpClose} />
+      {/* <LoginModal show={showLogin} handleClose={handleLoginClose} />
+      <SignUpModal show={showSignUp} handleClose={handleSignUpClose} /> */}
     </>
   );
 };
